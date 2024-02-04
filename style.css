@@ -18,23 +18,30 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
   width: 327px;
   color: #fff;
 }
 
+section {
+  padding: 30px;
+}
+
 h2 {
   font-family: BigShoulders, serif;
   font-size: 40px;
   font-weight: 700;
+  margin: 20px 0;
 }
 
 p {
   font-family: LexendDeca, serif;
   font-size: 15px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 button {
@@ -46,6 +53,7 @@ button {
   border: 1px solid white;
   border-radius: 25px;
   background-color: #fff;
+  margin-top: 20px;
 }
 
 #sedan button {
@@ -55,22 +63,34 @@ button {
 #suv button {
   color: #006971;
 }
+
 #luxury button {
   color: #004140;
 }
+
 #sedan,
 #sedan button:hover {
   background-color: #e28625;
+  color: #fff;
 }
 
 #suv,
 #suv button:hover {
   background-color: #006971;
+  color: #fff;
 }
 
 #luxury,
 #luxury button:hover {
   background-color: #004140;
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    flex-direction: row;
+    width: 920px;
+  }
 }
 
 .attribution {

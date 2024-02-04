@@ -1,0 +1,27 @@
+body {
+  background-color: #f2f2f2;
+  flex: column 300px;
+}
+
+#sedan {
+  background-color: #e28625;
+}
+
+#suv {
+  background-color: #006971;
+}
+
+#luxury {
+  background-color: #004140;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,17 +1,75 @@
+@font-face {
+  font-family: BigShoulders;
+  src: url(/assets/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url(/assets/LexendDeca-VariableFont_wght.ttf);
+}
+
 body {
   background-color: #f2f2f2;
   flex: column 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#sedan {
+main {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 327px;
+  color: #fff;
+}
+
+h2 {
+  font-family: BigShoulders, serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-family: LexendDeca, serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+button {
+  font-family: LexendDeca, serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+#sedan button {
+  color: #e28625;
+}
+
+#suv button {
+  color: #006971;
+}
+#luxury button {
+  color: #004140;
+}
+#sedan,
+#sedan button:hover {
   background-color: #e28625;
 }
 
-#suv {
+#suv,
+#suv button:hover {
   background-color: #006971;
 }
 
-#luxury {
+#luxury,
+#luxury button:hover {
   background-color: #004140;
 }
 
